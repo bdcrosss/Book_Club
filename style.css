@@ -1,0 +1,270 @@
+
+/* ------------------------------
+   GENERAL
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f8f3ee;
+    color: #493d3a;
+    font-family: "DM Sans", sans-serif;
+}
+
+.container {
+    width: min(90%, 720px);
+    margin: 0 auto;
+    padding: 45px 0 30px;
+}
+
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+    text-align: center;
+}
+
+.photo-wrapper {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 28px;
+    margin-bottom: 30px;
+}
+
+.photo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.eyebrow,
+.label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #a98278;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: clamp(38px, 7vw, 58px);
+    line-height: 1.1;
+    margin: 10px 0;
+    color: #4c3b38;
+}
+
+.intro {
+    color: #88736d;
+    font-size: 15px;
+}
+
+
+/* ------------------------------
+   BOOK CARD
+------------------------------ */
+
+.book-card {
+    background: #fffdf9;
+    border: 1px solid #eadfd8;
+    border-radius: 24px;
+    padding: 30px;
+    margin-top: 35px;
+    box-shadow: 0 12px 35px rgba(80, 58, 48, 0.06);
+}
+
+.book-info {
+    text-align: center;
+}
+
+.book-info h2 {
+    font-size: 29px;
+    line-height: 1.25;
+    margin: 10px 0 5px;
+}
+
+.author {
+    color: #907b74;
+    font-style: italic;
+}
+
+.divider {
+    height: 1px;
+    background: #eadfd8;
+    margin: 25px 0;
+}
+
+.meeting-info {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #f3e4df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a98278;
+    font-size: 18px;
+}
+
+.info-item p {
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+
+/* ------------------------------
+   WHEEL
+------------------------------ */
+
+.wheel-section {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.wheel-section h2 {
+    font-size: 30px;
+    margin: 8px 0 25px;
+}
+
+.wheel-container {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto 25px;
+}
+
+#wheel {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: rotate(0deg);
+}
+
+.pointer {
+    position: absolute;
+    z-index: 10;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 28px solid #493d3a;
+
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.15));
+}
+
+#spinButton {
+    border: none;
+    background: #a98278;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#spinButton:hover {
+    background: #8e6c64;
+    transform: translateY(-2px);
+}
+
+#spinButton:active {
+    transform: translateY(0);
+}
+
+#result {
+    min-height: 30px;
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    color: #4c3b38;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    text-align: center;
+    margin-top: 55px;
+    color: #ad9790;
+    font-size: 12px;
+}
+
+
+/* ------------------------------
+   MOBILE
+------------------------------ */
+
+@media (max-width: 550px) {
+
+    .container {
+        padding-top: 25px;
+    }
+
+    .photo-wrapper {
+        height: 220px;
+        border-radius: 22px;
+    }
+
+    .book-card {
+        padding: 25px 20px;
+    }
+
+    .book-info h2 {
+        font-size: 25px;
+    }
+
+    .meeting-info {
+        gap: 30px;
+    }
+
+    .info-item {
+        gap: 8px;
+    }
+
+    .info-item .label {
+        font-size: 9px;
+    }
+
+    .info-item p {
+        font-size: 14px;
+    }
+}
+

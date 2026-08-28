@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Club ♡</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="photo-wrapper">
+                <img 
+                    src="https://static.wixstatic.com/media/5682b8_ba5e1ec5e02340ea9691eda272bb1bc3~mv2.png/v1/fit/w_2500,h_1330,al_c/5682b8_ba5e1ec5e02340ea9691eda272bb1bc3~mv2.png" 
+                    alt="Open book surrounded by flowers"
+                >
+            </div>
+
+            <h1>Welcome to the club! 📖</h1>
+
+            <p class="intro">
+                Good books and good company.
+            </p>
+        </section>
+
+
+        <!-- BOOK INFO -->
+        <section class="book-card">
+
+            <div class="book-info">
+                <span class="label">THIS MONTH'S BOOK</span>
+
+                <h2>The Killing Game</h2>
+
+                <p class="author">by Kate Boss</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="meeting-info">
+
+                <div class="info-item">
+                    <span class="icon">♡</span>
+                    <div>
+                        <span class="label">HOSTING</span>
+                        <p>Brice</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="icon">◷</span>
+                    <div>
+                        <span class="label">MEETING</span>
+                        <p>Setember 29th - 7:30 PM</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHEEL -->
+        <section class="wheel-section">
+
+            <span class="label">WHO'S UP NEXT?</span>
+
+            <h2>Spin the wheel! ✨</h2>
+
+            <div class="wheel-container">
+
+                <div class="pointer"></div>
+
+                <canvas id="wheel" width="400" height="400"></canvas>
+
+            </div>
+
+            <button id="spinButton">SPIN</button>
+
+            <p id="result"></p>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>♡</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
