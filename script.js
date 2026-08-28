@@ -225,7 +225,7 @@ function spinWheel() {
     setTimeout(function () {
 
         result.textContent =
-            `✨ ${names[winnerIndex]} is up next! ✨`;
+            `✨ ${names[winnerIndex]} ✨`;
 
         button.disabled = false;
         button.textContent = "SPIN AGAIN";
