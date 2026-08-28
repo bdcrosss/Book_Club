@@ -70,6 +70,18 @@ h1 {
     font-size: 15px;
 }
 
+.address {
+    display: block;
+    margin-top: 3px;
+    color: #a98278;
+    font-size: 11px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.address:hover {
+    opacity: 0.65;
+}
 
 /* ------------------------------
    BOOK CARD
